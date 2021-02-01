@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="section">
+        <div class="section-inner">
+
+            <div class="song_number">
+                <p class="present">1</p>
+                <p>/</p>
+                <p class="total">5</p>
+            </div>
+
+            <p class="title">title.mp3</p>
+            <p class="artist">Artist name</p>
+
+            <div class="player">
+                <button id="prew"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                <button id="playPause"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button id="next"><i class="fa fa-step-forward" aria-hidden="true"></i> </button>
+            </div>
+
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration">
+            </div>
+            <div class="volume">
+                <p id="volume-show">90</p>
+                <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon"></i>
+                <input type="range" min="0" max="100" value="90" id="volume">
+            </div>
+            <button id="auto">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+            <audio class="audio" src=""></audio>
+            <div class="burger">
+                <h2>Playlist</h2>
+                <img src="./menu.svg" alt="" width="30" height="30" class='img'>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <h3>Playlist</h3>
+        <p class='list1'></p>
+        <p class='list2'></p>
+        <p class='list3'></p>
+        <p class='list4'></p>
+        <p class='list5'></p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
